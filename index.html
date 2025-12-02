@@ -24,13 +24,15 @@
 
 <body>
 
-<!--TOP BAR -->
+<!-- Header -->
 <header class="topbar">
+  <!-- Vänstra delen av topbaren, namn och logotyp -->
   <div class="topbar-left">
-    <div class="logo-icon">🎵</div>
-    <span class="logo-text">Lyrics Finder</span>
+    <div class="logo-icon">🎵</div> <!-- logotyp -->
+    <span class="logo-text">Lyrics Finder</span> <!-- namnet på appen -->
   </div>
 
+<!-- Höger del av topbaren: meny val (ej klickbara) -->
   <div class="topbar-right">
     <span>Funktioner</span>
     <span>Populärt</span>
@@ -38,35 +40,37 @@
 </header>
 
 
-<!-- HERO SECTION -->
+<!-- Hero section -->
 <section class="hero">
-  <div class="hero-icon">🎵</div>
-  <h1 class="hero-title">Lyrics Finder</h1>
-  <p class="hero-subtitle">Hitta låttexter till dina favoritlåtar</p>
+  <div class="hero-icon">🎵</div> <!-- Logo i herosektionen -->
+  <h1 class="hero-title">Lyrics Finder</h1> <!-- Rubrik -->
+  <p class="hero-subtitle">Hitta låttexter till dina favoritlåtar</p> <!-- Kort beskrivande text om applikationen -->
 
-  <!-- SEARCH BAR -->
+  <!-- Search bar -->
   <div class="search-box">
+    <!-- Input fält för låtnamn-->
     <div class="field">
-      <label>Låtnamn</label>
+      <label>Låtnamn</label> <!-- Text ovanför första input fältet -->
       <input id="song-input" type="text" placeholder="ex. Dancing Queen" />
     </div>
 
+    <!-- Input fält för artist -->
     <div class="field">
-      <label>Artist</label>
+      <label>Artist</label> <!-- Text ovanför andra input fältet -->
       <input id="artist-input" type="text" placeholder="ex. ABBA" />
     </div>
 
+    <!-- Sökknapp -->
     <button id="search-btn" class="search-button" type="button">🔍 Sök låttext</button>
   </div>
 
-<!-- DIVIDER LINE -->
-
+<!-- Divider Linje mellan sök och resultat -->
   <hr class="divider" >
 
-  <!-- RESULTAT LÅTTEXT -->
+  <!-- Resultat låttext -->
   <div id="lyrics-result" class="lyrics-box"></div>
 
-  <!-- INFO TEXT -->
+  <!-- Infotext om antal låttexter och artister -->
   <div class="stats">
     <div class="stat">
       <h2>1M +</h2>
@@ -80,20 +84,21 @@
   </div>
 </section>
 
-
-<!-- FOOTER -->
+<!-- Footer -->
 <footer class="footer">
+  <!-- Vänster del av footern -->
   <div class="footer-left">
-    <div class="footer-icon">🎵</div>
+    <div class="footer-icon">🎵</div> <!-- Ikon i footern -->
     <div>
-      <strong>Lyrics Finder</strong>
+      <strong>Lyrics Finder</strong> <!-- Appens namn i footern -->
       <p>
         Den ultimata källan för låttexter. Hitta, läs och njut av texter från dina
         favoritartister världen över
-      </p>
+      </p> <!-- Beskrivande text om applikationen i footern -->
     </div>
   </div>
 
+  <!-- Höger del av footern, ej klickbart-->
   <div class="footer-right">
     <h4>Information</h4>
     <p>Om oss</p>
@@ -102,6 +107,7 @@
   </div>
 </footer>
 
+<!-- Länk till JavaScript-->
 <script src="js/app.js"> </script>
 
 </body>

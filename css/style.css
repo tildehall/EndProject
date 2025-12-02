@@ -1,23 +1,10 @@
-/*! HTML5 Boilerplate v9.0.1 | MIT License | https://html5boilerplate.com/ */
-
-/* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
-
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
-
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #9b26ff, #150377);
+  background: linear-gradient(135deg, #9c3af3, #130078);
 }
 
-/* TOP BAR */
+/* Header */
 .topbar {
   position: fixed;
   top: 0;
@@ -39,7 +26,7 @@ body {
 
 .logo-icon {
   font-size: 26px;
-  background: linear-gradient(135deg, #9b26ff, #2f00ff);
+  background: linear-gradient(135deg, #bb72f6, #2108b5);
   color: #FDFAFF;
   padding: 8px;
   border-radius: 8px;
@@ -61,12 +48,13 @@ body {
   color: #3E006A;
 }
 
-/* HERO */
+/* Hero section */
 .hero {
   margin-top: 60px;
   text-align: center;
   padding: 80px 20px 150px;
   color: white;
+  background: linear-gradient(135deg, #9c3af3, #130078);
 }
 
 .hero-icon {
@@ -84,7 +72,7 @@ body {
   opacity: 0.9;
 }
 
-/* SEARCH BAR */
+/* Search bar */
 .search-box {
   background: white;
   padding: 30px;
@@ -116,7 +104,7 @@ body {
 .search-button {
   width: 90%;
   margin: 0 auto;
-  background: linear-gradient(90deg, #9b26ff, #3800a8);
+  background: linear-gradient(90deg, #9c3af3, #130078);
   color: white;
   padding: 15px 0;
   border: none;
@@ -125,14 +113,14 @@ body {
   cursor: pointer;
 }
 
-/* DIVIDER */
+/* Divider linje */
 .divider {
   width: 70%;
   margin: 40px auto;
   border-top: 1px solid
 }
 
-/* INFO TEXT */
+/* Info text */
 .stats {
   display: flex;
   justify-content: center;
@@ -151,7 +139,7 @@ body {
   opacity: 0.8;
 }
 
-/* FOOTER */
+/* Footer */
 .footer {
   background: #0c0c14;
   color: white;
@@ -171,8 +159,9 @@ body {
  }
 
 .footer-icon {
+  text-align: center;
   font-size: 26px;
-  background: linear-gradient(135deg, #9b26ff, #2f00ff);
+  background: linear-gradient(135deg, #bb72f6, #2108b5);
   color: #FDFAFF;
   padding: 8px;
   border-radius: 8px;
@@ -187,10 +176,9 @@ body {
   .footer-right p {
     margin: 6px 0;
   }
-
 }
 
-/* LYRICS RESULT BOX */
+/* Resultat låttext */
 .lyrics-box {
   width: 70%;
   margin: 40px auto 0;
