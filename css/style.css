@@ -65,7 +65,7 @@ body {
 .hero {
   margin-top: 60px;
   text-align: center;
-  background: linear-gradient(135deg, #9b26ff, #2f00ff);
+  background: linear-gradient(135deg, #9b26ff, #150377);
   padding: 80px 20px 150px;
   color: white;
 }
@@ -90,7 +90,7 @@ body {
   background: white;
   padding: 30px;
   border-radius: 20px;
-  width: 60%;
+  width: 50%;
   margin: 40px auto;
   display: flex;
   flex-direction: column;
@@ -104,7 +104,7 @@ body {
 }
 
 .field input {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   display: block;
   padding: 14px 15px;
@@ -115,7 +115,9 @@ body {
 }
 
 .search-button {
-  background: linear-gradient(90deg, #9b26ff, #2f00ff);
+  width: 90%;
+  margin: 0 auto;
+  background: linear-gradient(90deg, #9b26ff, #3800a8);
   color: white;
   padding: 15px 0;
   border: none;
@@ -124,7 +126,7 @@ body {
   cursor: pointer;
 }
 
-/* DIVIDER */
+/* DIVIDER LINE */
 .divider {
   width: 70%;
   margin: 40px auto;
