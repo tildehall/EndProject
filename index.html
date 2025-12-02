@@ -48,20 +48,23 @@
   <div class="search-box">
     <div class="field">
       <label>Låtnamn</label>
-      <input type="text" placeholder="ex. Dancing Queen" />
+      <input id="song-input" type="text" placeholder="ex. Dancing Queen" />
     </div>
 
     <div class="field">
       <label>Artist</label>
-      <input type="text" placeholder="ex. ABBA" />
+      <input id="artist-input" type="text" placeholder="ex. ABBA" />
     </div>
 
-    <button class="search-button">🔍 Sök låttext</button>
+    <button id="search-btn" class="search-button" type="button">🔍 Sök låttext</button>
   </div>
 
 <!-- DIVIDER LINE -->
 
   <hr class="divider" >
+
+  <!-- RESULTAT LÅTTEXT -->
+  <div id="lyrics-result" class="lyrics-box"></div>
 
   <!-- INFO TEXT -->
   <div class="stats">
