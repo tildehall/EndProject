@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const searchBtn = document.getElementById("search-btn"); // Hänvisar till sökknapp
   const songInput = document.getElementById("song-input"); // Hänvisar till input fält där användare ska skriva låtnamn
   const artistInput = document.getElementById("artist-input"); // Hänvisar till input fält där användare ska skriva artist
-  const lyricsBox = document.getElementById("lyrics-result"); // HÄnvisar till låttexten
+  const lyricsBox = document.getElementById("lyrics-result"); // Hänvisar till låttexten
 
   // Lyssnar efter click på search button
   searchBtn.addEventListener("click", async () => {
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const response = await fetch(url);
       const data = await response.json();
 
-      // Meddelande som visas om API meddelade ett fel (om låttexten inte fanns)
+      // Meddelande som visas om API meddelar ett fel (om låttexten inte fanns)
       if (data.error) {
         lyricsBox.textContent = "Ingen låttext hittades. Kontrollera stavningen.";
       // Visar låttexten om allt funkade
