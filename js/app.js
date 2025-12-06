@@ -14,8 +14,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const song = songInput.value.trim();
     const artist = artistInput.value.trim();
 
-
-
     if (!song || !artist) {
       lyricsBox.style.display = "block"; // Om inputen är korrekt visas lyrics boxen
       lyricsBox.textContent = "Du måste fylla i både låt och artist!"; //  Om någon av input fälten är tomma visas felmeddelandet
@@ -34,17 +32,16 @@ document.addEventListener("DOMContentLoaded", () => {
       const response = await fetch(url);
       const data = await response.json();
 
-      // Meddelande som visas om API meddelar ett fel (om låttexten inte fanns)
-      if (data.error) {
-        lyricsBox.textContent = "Ingen låttext hittades. Kontrollera stavningen.";
-      // Visar låttexten om allt funkade
+      if (data.lyrics) {
+        lyricsBox.textContent = data.lyrics; // Visar låttexten om allt funkade
       } else {
-        lyricsBox.textContent = data.lyrics;
+        lyricsBox.textContent = "Ingen låttext hittades..."; // Meddelande som visas om API returnerar ett fel (om låttexten inte fanns)
       }
 
-    // Felmeddelande som visas om något gick fel, till exempel om problem med internetuppkoppling
+      // Felmeddelande som visas om något gick fel, till exempel om problem med internetuppkoppling
     } catch (error) {
       lyricsBox.textContent = "Ett fel uppstod. Försök igen.";
     }
   });
 });
+
