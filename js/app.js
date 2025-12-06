@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const artistInput = document.getElementById("artist-input"); // Hänvisar till input fält där användare ska skriva artist
   const lyricsBox = document.getElementById("lyrics-result"); // Hänvisar till låttexten
 
+
   // Lyssnar efter click på search button
   searchBtn.addEventListener("click", async () => {
 
@@ -21,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // Skapar URL med användarens input för att kunna anropa API
-    const url = `https://api.lyrics.ovh/v1/${artist}/${song}`;
+    const url = `https://api.lyrics.ovh/v1/${encodeURIComponent(artist)}/${encodeURIComponent(song)}`;
 
     // Visar lyrics boxen med ett meddelande att låttexten hämtas
     lyricsBox.style.display = "block";
